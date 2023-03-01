@@ -14,9 +14,6 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class EmployeeServiceImpl implements EmployeeService {
     private final EmployeeRepository employeeRepository;
-
-//    private final WebClient webClient;
-
     private final APIClient apiClient;
 
     private Employee mapToEmployee(EmployeeDto employeeDto) {
@@ -48,12 +45,6 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public APIResponseDto getEmployeeById(Long id) {
         Employee employee = employeeRepository.findById(id).get();
-
-//        DepartmentDto departmentDto = webClient.get()
-//                .uri("http://localhost:8080/api/departments/" + employee.getDepartmentCode())
-//                .retrieve()
-//                .bodyToMono(DepartmentDto.class)
-//                .block();
 
         DepartmentDto departmentDto = apiClient.getDepartment(employee.getDepartmentCode());
 

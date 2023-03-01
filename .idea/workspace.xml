@@ -5,13 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d6d0636-7cad-4034-bb1f-f5fd19889096" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/service-registry/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-registry/src/main/java/com/spring/microservices/ServiceRegistryApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-registry/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/department-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/department-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/department-service/src/main/java/com/spring/microservices/DepartmentServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/department-service/src/main/java/com/spring/microservices/DepartmentServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/department-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/department-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/spring/microservices/EmployeeServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/spring/microservices/EmployeeServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/spring/microservices/service/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/spring/microservices/service/impl/EmployeeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,9 +102,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ServiceRegistryApplication" />
         <item itemvalue="Application.EmployeeServiceApplication" />
         <item itemvalue="Application.DepartmentServiceApplication" />
+        <item itemvalue="Application.ServiceRegistryApplication" />
       </list>
     </recent_temporary>
   </component>
