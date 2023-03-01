@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d6d0636-7cad-4034-bb1f-f5fd19889096" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/department-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/department-service/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="5d6d0636-7cad-4034-bb1f-f5fd19889096" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,8 +98,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DepartmentServiceApplication" />
         <item itemvalue="Application.EmployeeServiceApplication" />
+        <item itemvalue="Application.DepartmentServiceApplication" />
         <item itemvalue="Application.ServiceRegistryApplication" />
       </list>
     </recent_temporary>
