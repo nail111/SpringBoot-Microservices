@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d6d0636-7cad-4034-bb1f-f5fd19889096" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/department-service/src/main/java/com/spring/microservices/controller/DepartmentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/department-service/src/main/java/com/spring/microservices/dto/DepartmentDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/department-service/src/main/java/com/spring/microservices/entity/Department.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/department-service/src/main/java/com/spring/microservices/repository/DepartmentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/department-service/src/main/java/com/spring/microservices/service/DepartmentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/department-service/src/main/java/com/spring/microservices/service/impl/DepartmentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/spring/microservices/controller/EmployeeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/spring/microservices/dto/EmployeeDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/spring/microservices/entity/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/spring/microservices/repository/EmployeeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/spring/microservices/service/EmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/spring/microservices/service/impl/EmployeeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employee-service/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +46,7 @@
     "jdk.selected.JAVA_MODULE": "11"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.EmployeeServiceApplication">
     <configuration name="DepartmentServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.spring.microservices.DepartmentServiceApplication" />
       <module name="department-service" />
@@ -59,8 +60,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EmployeeServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.spring.microservices.EmployeeServiceApplication" />
+      <module name="employee-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spring.microservices.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EmployeeServiceApplication" />
         <item itemvalue="Application.DepartmentServiceApplication" />
       </list>
     </recent_temporary>
