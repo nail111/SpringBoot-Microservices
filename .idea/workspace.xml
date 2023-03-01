@@ -6,13 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5d6d0636-7cad-4034-bb1f-f5fd19889096" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/department-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/department-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/department-service/src/main/java/com/spring/microservices/DepartmentServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/department-service/src/main/java/com/spring/microservices/DepartmentServiceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/department-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/department-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/spring/microservices/EmployeeServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/spring/microservices/EmployeeServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/spring/microservices/service/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/spring/microservices/service/impl/EmployeeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,8 +54,8 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ServiceRegistryApplication">
-    <configuration name="DepartmentServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.DepartmentServiceApplication">
+    <configuration name="DepartmentServiceApplication" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.spring.microservices.DepartmentServiceApplication" />
       <module name="department-service" />
       <extension name="coverage">
@@ -100,10 +94,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.DepartmentServiceApplication" />
+      <item itemvalue="Application.EmployeeServiceApplication" />
+      <item itemvalue="Application.ServiceRegistryApplication" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.EmployeeServiceApplication" />
         <item itemvalue="Application.DepartmentServiceApplication" />
+        <item itemvalue="Application.EmployeeServiceApplication" />
         <item itemvalue="Application.ServiceRegistryApplication" />
       </list>
     </recent_temporary>
