@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d6d0636-7cad-4034-bb1f-f5fd19889096" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/spring/microservices/dto/APIResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/spring/microservices/dto/DepartmentDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/spring/microservices/EmployeeServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/spring/microservices/EmployeeServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/spring/microservices/dto/EmployeeDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/spring/microservices/dto/EmployeeDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/spring/microservices/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/spring/microservices/entity/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/spring/microservices/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/spring/microservices/service/EmployeeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/spring/microservices/service/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/spring/microservices/service/impl/EmployeeServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,8 +78,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.EmployeeServiceApplication" />
         <item itemvalue="Application.DepartmentServiceApplication" />
+        <item itemvalue="Application.EmployeeServiceApplication" />
       </list>
     </recent_temporary>
   </component>

@@ -7,16 +7,15 @@ import com.spring.microservices.entity.Employee;
 import com.spring.microservices.repository.EmployeeRepository;
 import com.spring.microservices.service.EmployeeService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
+import org.springframework.web.reactive.function.client.WebClient;
 
 @Service
 @RequiredArgsConstructor
 public class EmployeeServiceImpl implements EmployeeService {
     private final EmployeeRepository employeeRepository;
 
-    private final RestTemplate restTemplate;
+    private final WebClient webClient;
 
     private Employee mapToEmployee(EmployeeDto employeeDto) {
         return Employee.builder()
@@ -48,9 +47,11 @@ public class EmployeeServiceImpl implements EmployeeService {
     public APIResponseDto getEmployeeById(Long id) {
         Employee employee = employeeRepository.findById(id).get();
 
-        ResponseEntity<DepartmentDto> responseEntity =
-                restTemplate.getForEntity("http://localhost:8080/api/departments/" + employee.getDepartmentCode(), DepartmentDto.class);
-        DepartmentDto departmentDto = responseEntity.getBody();
+        DepartmentDto departmentDto = webClient.get()
+                .uri("http://localhost:8080/api/departments/" + employee.getDepartmentCode())
+                .retrieve()
+                .bodyToMono(DepartmentDto.class)
+                .block();
 
         APIResponseDto apiResponseDto = new APIResponseDto();
         apiResponseDto.setEmployee(mapToEmployeeDto(employee));
