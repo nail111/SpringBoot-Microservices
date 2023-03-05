@@ -8,7 +8,10 @@ import com.spring.microservices.repository.EmployeeRepository;
 import com.spring.microservices.service.APIClient;
 import com.spring.microservices.service.EmployeeService;
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
+import io.github.resilience4j.retry.annotation.Retry;
 import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -16,6 +19,8 @@ import org.springframework.stereotype.Service;
 public class EmployeeServiceImpl implements EmployeeService {
     private final EmployeeRepository employeeRepository;
     private final APIClient apiClient;
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(EmployeeServiceImpl.class);
 
     private Employee mapToEmployee(EmployeeDto employeeDto) {
         return Employee.builder()
@@ -44,8 +49,10 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
-    @CircuitBreaker(name = "${spring.application.name}", fallbackMethod = "getDefaultDepartment")
+//    @CircuitBreaker(name = "${spring.application.name}", fallbackMethod = "getDefaultDepartment")
+    @Retry(name = "${spring.application.name}", fallbackMethod = "getDefaultDepartment")
     public APIResponseDto getEmployeeById(Long id) {
+        LOGGER.info("inside getEmployeeById() method");
         Employee employee = employeeRepository.findById(id).get();
 
         DepartmentDto departmentDto = apiClient.getDepartment(employee.getDepartmentCode());
@@ -58,6 +65,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     public APIResponseDto getDefaultDepartment(Long id, Exception exception) {
+        LOGGER.info("inside getDefaultDepartment() method");
         Employee employee = employeeRepository.findById(id).get();
 
         DepartmentDto departmentDto = new DepartmentDto();
