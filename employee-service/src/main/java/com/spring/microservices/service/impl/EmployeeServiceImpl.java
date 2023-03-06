@@ -8,6 +8,7 @@ import com.spring.microservices.entity.Employee;
 import com.spring.microservices.repository.EmployeeRepository;
 import com.spring.microservices.service.APIClient;
 import com.spring.microservices.service.EmployeeService;
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import io.github.resilience4j.retry.annotation.Retry;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
@@ -54,7 +55,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
-//    @CircuitBreaker(name = "${spring.application.name}", fallbackMethod = "getDefaultDepartment")
+    @CircuitBreaker(name = "${spring.application.name}", fallbackMethod = "getDefaultDepartment")
     @Retry(name = "${spring.application.name}", fallbackMethod = "getDefaultDepartment")
     public APIResponseDto getEmployeeById(Long id) {
         LOGGER.info("inside getEmployeeById() method");
