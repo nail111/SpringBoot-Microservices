@@ -5,19 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d6d0636-7cad-4034-bb1f-f5fd19889096" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/organization-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/organization-service/src/main/java/com/spring/microservices/OrganizationServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/organization-service/src/main/java/com/spring/microservices/controller/OrganizationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/organization-service/src/main/java/com/spring/microservices/dto/OrganizationDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/organization-service/src/main/java/com/spring/microservices/entity/Organization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/organization-service/src/main/java/com/spring/microservices/repository/OrganizationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/organization-service/src/main/java/com/spring/microservices/service/OrganizationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/organization-service/src/main/java/com/spring/microservices/service/impl/OrganizationServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/organization-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/spring/microservices/config/WebClientConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/spring/microservices/dto/OrganizationDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/spring/microservices/dto/APIResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/spring/microservices/dto/APIResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/spring/microservices/dto/EmployeeDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/spring/microservices/dto/EmployeeDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/spring/microservices/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/spring/microservices/entity/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/spring/microservices/service/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/spring/microservices/service/impl/EmployeeServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +59,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Nail\Desktop\springboot-microservices" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.spring.microservices.dto" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -150,9 +146,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EmployeeServiceApplication" />
         <item itemvalue="Application.ApiGatewayApplication" />
         <item itemvalue="Application.OrganizationServiceApplication" />
-        <item itemvalue="Application.EmployeeServiceApplication" />
         <item itemvalue="Application.DepartmentServiceApplication" />
         <item itemvalue="Application.ServiceRegistryApplication" />
       </list>

@@ -3,22 +3,25 @@ package com.spring.microservices.service.impl;
 import com.spring.microservices.dto.APIResponseDto;
 import com.spring.microservices.dto.DepartmentDto;
 import com.spring.microservices.dto.EmployeeDto;
+import com.spring.microservices.dto.OrganizationDto;
 import com.spring.microservices.entity.Employee;
 import com.spring.microservices.repository.EmployeeRepository;
 import com.spring.microservices.service.APIClient;
 import com.spring.microservices.service.EmployeeService;
-import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import io.github.resilience4j.retry.annotation.Retry;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
+import org.springframework.web.reactive.function.client.WebClient;
 
 @Service
 @RequiredArgsConstructor
 public class EmployeeServiceImpl implements EmployeeService {
     private final EmployeeRepository employeeRepository;
     private final APIClient apiClient;
+
+    private final WebClient webClient;
 
     private static final Logger LOGGER = LoggerFactory.getLogger(EmployeeServiceImpl.class);
 
@@ -29,6 +32,7 @@ public class EmployeeServiceImpl implements EmployeeService {
                 .lastName(employeeDto.getLastName())
                 .email(employeeDto.getEmail())
                 .departmentCode(employeeDto.getDepartmentCode())
+                .organizationCode(employeeDto.getOrganizationCode())
                 .build();
     }
 
@@ -39,6 +43,7 @@ public class EmployeeServiceImpl implements EmployeeService {
                 .lastName(employee.getLastName())
                 .email(employee.getEmail())
                 .departmentCode(employee.getDepartmentCode())
+                .organizationCode(employee.getOrganizationCode())
                 .build();
     }
 
@@ -57,9 +62,16 @@ public class EmployeeServiceImpl implements EmployeeService {
 
         DepartmentDto departmentDto = apiClient.getDepartment(employee.getDepartmentCode());
 
+        OrganizationDto organizationDto = webClient.get()
+                .uri("http://localhost:9191/api/organizations/" + employee.getOrganizationCode())
+                .retrieve()
+                .bodyToMono(OrganizationDto.class)
+                .block();
+
         APIResponseDto apiResponseDto = new APIResponseDto();
         apiResponseDto.setEmployee(mapToEmployeeDto(employee));
         apiResponseDto.setDepartment(departmentDto);
+        apiResponseDto.setOrganization(organizationDto);
 
         return apiResponseDto;
     }
